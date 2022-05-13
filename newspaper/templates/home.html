@@ -9,11 +9,13 @@
 </head>
 <body>
     {% block content %}
-    {% for post in object_list %}
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.text }}</p>
-    <h2>{{ post.author}}</h2>
-    {% endfor %}
+    
+        {% for post in object_list %}
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text }}</p>
+            <h2>{{ post.author}}</h2>
+        {% endfor %}
+
     {% endblock content %}
 </body>
 </html>
